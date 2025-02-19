@@ -1,4 +1,6 @@
 ---
+import "../styles/global.css";
+
 import Header from "../components/header/Header.astro";
 
 const { pageTitle } = Astro.props;
@@ -14,6 +16,7 @@ const { pageTitle } = Astro.props;
     <title>vollstack | {pageTitle}</title>
   </head>
   <body>
+    <Header />
     <slot />
   </body>
 </html>
