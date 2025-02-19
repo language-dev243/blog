@@ -4,8 +4,12 @@ import SocialLinks from "./SocialLinks.astro";
 ---
 
 <header>
-  <nav>
-    <PageLinks />
-    <SocialLinks />
+  <nav
+    class="sticky top-0 z-10 bg-gray-700 flex justify-center items-center px-4 py-2"
+  >
+    <div class="flex justify-between items-center w-full max-w-4xl">
+      <PageLinks />
+      <SocialLinks />
+    </div>
   </nav>
 </header>

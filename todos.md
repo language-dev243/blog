@@ -4,6 +4,7 @@
   
 ## header
 
+- [ ] setting colors for light/dark mode primary secondary background text
 - [ ] responsive with hamburger menu
 - [ ] indicate current page with colored underline (and pagetitle as text somewhere?)
 - [ ] add dark light mode switch
