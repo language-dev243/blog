@@ -1,21 +1,33 @@
 ---
-
+const { currentPage } = Astro.props;
 ---
 
 <ul class="flex space-x-4">
   <li>
-    <a href="/" class="px-4 py-4 text-white hover:text-blue-400">about</a>
+    <a
+      href="/"
+      class={`px-4 py-2 rounded ${currentPage === "/" ? "bg-[var(--color-text)] text-[var(--color-background)]" : "text-[var(--color-text) hover:text-blue-400"}`}
+      >about</a
+    >
   </li>
   <li>
-    <a href="/blog/" class="px-4 py-4 text-white hover:text-blue-400">blog</a>
+    <a
+      href="/blog/"
+      class={`px-4 py-2 rounded ${currentPage === "/blog/" ? "bg-[var(--color-text)] text-[var(--color-background)]" : "text-[var(--color-text) hover:text-blue-400"}`}
+      >blog</a
+    >
   </li>
   <li>
-    <a href="/projects/" class="px-4 py-4 text-white hover:text-blue-400"
+    <a
+      href="/projects/"
+      class={`px-4 py-2 rounded ${currentPage === "/projects/" ? "bg-[var(--color-text)] text-[var(--color-background)]" : "text-[var(--color-text) hover:text-blue-400"}`}
       >projects</a
     >
   </li>
   <li>
-    <a href="/questions/" class="px-4 py-4 text-white hover:text-blue-400"
+    <a
+      href="/questions/"
+      class={`px-4 py-2 rounded ${currentPage === "/questions/" ? "bg-[var(--color-text)] text-[var(--color-background)]" : "text-white hover:text-blue-400"}`}
       >questions</a
     >
   </li>
