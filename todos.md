@@ -1,6 +1,6 @@
 # todos
 
-- [ ] replace site url in astro.config.js ( dev and prod different?)
+- [ ] ignore until we go live - replace site url in astro.config.js ( dev and prod different?)
   
 ## header
 
@@ -10,20 +10,24 @@
 - [x] add questions page
 - [ ] responsive with hamburger menu
 - [ ] indicate current page with background/underline
+- [ ] styling - finish styling of this component
 
 ## index page
 
-- [ ] find image/avatar/emoji/logo/whatever
-- [ ] headding hello world
-- [ ] description text
-- [ ] my teck stack list
-- [ ] selected posts
+- [x] heading hello world
+- [ ] styling - find image/avatar/emoji/logo/whatever
+- [ ] write nice description text
+- [ ] write components MyTechStack and Technology
+- [ ] write SelectedPostsComponent
+- [ ] styling - add styling to the complete page over all components on this page
 
 ## blog page
 
 - [ ] setup mock posts
-- [ ] create nice list of blog posts
+- [ ] create list of blog posts
 - [ ] create a filter box to group by tags
+- [ ] create bar to switch between the categories (programming, guitar, languages)
+- [ ] styling - add styling to the complete page over all components on this page
 
 ## projects page
 
@@ -43,9 +47,3 @@ a project has a
 - - [ ] library app (?)
 - - [ ] timer app
 - - [ ] bookmarks app
-
-## questions page
-
-- [ ] create nice list of the questions
-- [ ] create a filter box to group by category
-- [ ] add a sources section
