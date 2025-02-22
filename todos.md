@@ -15,10 +15,10 @@
 ## index page
 
 - [x] heading hello world
-- [ ] styling - find image/avatar/emoji/logo/whatever
 - [ ] write nice description text
 - [ ] write components MyTechStack and Technology
 - [ ] write SelectedPostsComponent
+- [ ] styling - find image/avatar/emoji/logo/whatever
 - [ ] styling - add styling to the complete page over all components on this page
 
 ## blog page
@@ -27,6 +27,7 @@
 - [ ] create list of blog posts
 - [ ] create a filter box to group by tags
 - [ ] create bar to switch between the categories (programming, guitar, languages)
+- [ ] create layouts for programming blog posts
 - [ ] styling - add styling to the complete page over all components on this page
 
 ## projects page
