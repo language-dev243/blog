@@ -1,7 +1,12 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import ProjectsList from "../components/projects/ProjectsList.astro";
 ---
 
 <Layout pageTitle="Home" url={Astro.url}>
-  <h1>hello from projects page</h1>
+  <div>
+    <h1>hello from projects page</h1>
+    <p>introduction text to my projects</p>
+    <ProjectsList />
+  </div>
 </Layout>
