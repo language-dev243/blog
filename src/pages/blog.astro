@@ -1,7 +1,15 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import BlogPostList from "../components/blog/BlogPostList.astro";
+import CategorySwitcher from "../components/blog/CategorySwitcher.astro";
+import TagSelection from "../components/blog/TagSelection.astro";
 ---
 
 <Layout pageTitle="Home" url={Astro.url}>
   <h1>hello from blog page</h1>
+  <p>intro text asdf sdfa asdf sfd asf sa</p>
+  <p>intro text asdf sdfa asdf sfd asf sa</p>
+  <CategorySwitcher />
+  <TagSelection />
+  <BlogPostList />
 </Layout>
