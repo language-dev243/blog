@@ -16,7 +16,7 @@
 - [ ] find image/avatar/emoji/logo/whatever
 - [ ] headding hello world
 - [ ] description text
-- [ ] skill overwiew/list
+- [ ] my teck stack list
 - [ ] selected posts
 
 ## blog page
