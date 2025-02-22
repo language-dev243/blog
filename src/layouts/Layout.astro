@@ -13,7 +13,7 @@ const { pageTitle, url } = Astro.props;
     <meta name="generator" content={Astro.generator} />
     <title>vollstack | {pageTitle}</title>
   </head>
-  <body>
+  <body class="flex flex-col min-h-screen">
     <Header currentPage={url.pathname} />
     <slot />
   </body>

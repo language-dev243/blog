@@ -2,6 +2,59 @@
 import Layout from "../layouts/Layout.astro";
 ---
 
-<Layout pageTitle="Home" url={Astro.url}>
-  <h1>hello from index page</h1>
+<Layout pageTitle="about" url={Astro.url}>
+  <section>
+    <div class="flex-1 flex flex-col items-center justify-center w-full px-4">
+      <div
+        class="max-w-4xl w-full bg-[var(--color-background)] text-[var(--color-text)] p-8 rounded-2xl shadow-lg flex flex-col md:flex-row items-center md:items-start gap-8"
+      >
+        <!-- Heading + Paragraph -->
+        <div class="flex-1 text-center md:text-left">
+          <h1 class="text-4xl md:text-6xl font-bold text-[var(--color-text)]">
+            Hello, World!
+          </h1>
+          <p class="mt-4 text-lg text-[var(--color-text)]">
+            Welcome to my blog. Here, I share insights, projects, and thoughts
+            on web development and technology.
+          </p>
+        </div>
+        <!-- Hero Section -->
+
+        <!-- Placeholder Avatar -->
+        <div
+          class="w-32 h-32 md:w-48 md:h-48 rounded-full bg-gray-300 dark:bg-gray-700 flex items-center justify-center text-gray-500 text-2xl"
+        >
+          Avatar
+        </div>
+        <!-- Placeholder Avatar -->
+      </div>
+    </div>
+  </section>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const root = document.documentElement;
+      const storedTheme = localStorage.getItem("theme");
+      if (!storedTheme) {
+        localStorage.setItem("theme", "dark");
+        root.classList.add("dark");
+      } else if (storedTheme === "dark") {
+        root.classList.add("dark");
+      } else {
+        root.classList.remove("dark");
+      }
+    });
+  </script>
 </Layout>
+
+<style>
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--color-background);
+    color: var(--color-text);
+  }
+</style>
