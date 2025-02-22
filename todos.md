@@ -4,12 +4,12 @@
   
 ## header
 
-- [ ] indicate current page with background
 - [x] change github icon to one with white background
 - [x] setting colors for light/dark mode primary secondary background text
-- [ ] responsive with hamburger menu
 - [x] add dark light mode switch
 - [x] add questions page
+- [ ] responsive with hamburger menu
+- [ ] indicate current page with background/underline
 
 ## index page
 
