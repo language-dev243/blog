@@ -45,6 +45,5 @@ a project has a
 - [ ] create a nice list of projects
 - - [ ] this blog
 - - [ ] lila
-- - [ ] library app (?)
 - - [ ] timer app
 - - [ ] bookmarks app
