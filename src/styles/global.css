@@ -48,3 +48,21 @@ a.current {
   clip-path: inset(50%);
   white-space: nowrap;
 }
+
+@media (max-width: 768px) {
+  .md\\:hidden {
+    display: none;
+  }
+
+  .md\\:flex {
+    display: flex;
+  }
+
+  .mobile-menu-hidden {
+    display: none;
+  }
+
+  .mobile-menu-visible {
+    display: flex;
+  }
+}

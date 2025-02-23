@@ -11,7 +11,7 @@ slug: "example-post"
 layout: "../../layouts/ProgrammingPostLayout.astro"
 ---
 
-# Heavy Post
+# easy Post
 
 This is the content of the heavy post.
 

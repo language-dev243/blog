@@ -1,36 +1,65 @@
 ---
 import PageLinks from "./PageLinks.astro";
 import SocialLinks from "./SocialLinks.astro";
+import ThemeToggleButton from "./ThemeToggleButton.astro";
+import HamburgerMenuButton from "./HamburgerMenuButton.astro";
+import MobileMenu from "./MobileMenu.astro";
 const { currentPage } = Astro.props;
 ---
 
 <header
-  class="bg-[var(--color-background)] text-[var(--color-text)] border-b-2 border-[var(--color-text)]"
+  class="sticky
+  top-0
+  w-full
+  bg-[var(--color-background)]
+  text-[var(--color-text)]
+  border-b-2
+  border-[var(--color-text)]
+  z-50"
 >
-  <nav class="sticky top-0 z-100 flex justify-center items-center px-4 py-2">
+  <nav class="flex justify-center items-center px-4 py-2">
     <div class="flex justify-between items-center w-full max-w-4xl">
-      <button id="theme-toggle" class="p-2 text-2xl"> 🌙 </button>
-      <PageLinks currentPage={currentPage} />
-      <SocialLinks />
+      <ThemeToggleButton />
+      <div class="hidden md:flex md:flex-col items-center justify-center">
+        <PageLinks currentPage={currentPage} />
+        <SocialLinks />
+      </div>
+      <HamburgerMenuButton />
+      <MobileMenu currentPage={currentPage} />
     </div>
   </nav>
 </header>
 
 <script>
-  const button = document.getElementById("theme-toggle");
+  const themeButton = document.getElementById("theme-toggle");
   const root = document.documentElement;
   let isDark = localStorage.getItem("theme") === "dark";
+  const mobileMenuButton = document.getElementById("mobile-menu-toggle");
+  const mobileMenu = document.getElementById("mobile-menu");
+  const mobileCloseButton = document.getElementById("mobile-menu-close");
 
   function updateTheme() {
     root.classList.toggle("dark", isDark);
-    button.innerHTML = isDark ? "☀️" : "🌙";
+    themeButton.innerHTML = isDark ? "☀️" : "🌙";
     localStorage.setItem("theme", isDark ? "dark" : "light");
   }
 
-  button.addEventListener("click", () => {
+  themeButton?.addEventListener("click", () => {
     isDark = !isDark;
     updateTheme();
   });
+
+  function toggleMobileMenu() {
+    const isVisible = mobileMenu.classList.contains("mobile-menu-visible");
+    mobileMenu.classList.toggle("mobile-menu-hidden", isVisible);
+    mobileMenu.classList.toggle("mobile-menu-visible", !isVisible);
+    // Optional: Prevent scrolling when menu is open
+    document.body.style.overflow = isVisible ? "auto" : "hidden";
+  }
+
+  mobileMenuButton?.addEventListener("click", toggleMobileMenu);
+
+  mobileCloseButton?.addEventListener("click", toggleMobileMenu);
 
   updateTheme();
 </script>
