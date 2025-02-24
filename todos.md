@@ -15,9 +15,10 @@
 ## index page
 
 - [x] heading hello world
-- [ ] write nice description text
+- [ ] set basic layout for hero component
 - [ ] write components MyTechStack and Technology
 - [ ] write SelectedPostsComponent
+- [ ] styling - write nice description text
 - [ ] styling - find image/avatar/emoji/logo/whatever
 - [ ] styling - add styling to the complete page over all components on this page
 
