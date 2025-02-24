@@ -1,9 +1,5 @@
 @import "tailwindcss";
 
-* {
-  outline: 1px solid red;
-}
-
 :root {
   --color-background: #f0f0f0;
   --color-text: #333333;

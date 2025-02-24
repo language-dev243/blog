@@ -2,14 +2,16 @@
 const { currentPage } = Astro.props;
 ---
 
-<ul class="space-x-4 space-y-10 text-4xl font-bold">
-  <li>
+<ul
+  class="flex flex-col md:flex-row items-center font-semibold text-3xl md:text-lg"
+>
+  <li class="p-4">
     <a href="/">about</a>
   </li>
-  <li>
+  <li class="p-4">
     <a href="/blog/">blog</a>
   </li>
-  <li>
+  <li class="p-4">
     <a href="/projects/">projects</a>
   </li>
 </ul>
