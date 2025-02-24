@@ -8,8 +8,8 @@
 - [x] setting colors for light/dark mode primary secondary background text
 - [x] add dark light mode switch
 - [x] add questions page
-- [ ] responsive with hamburger menu
-- [ ] indicate current page with background/underline
+- [x] responsive with hamburger menu
+- [ ] styling - indicate current page with background/underline
 - [ ] styling - finish styling of this component
 
 ## index page
